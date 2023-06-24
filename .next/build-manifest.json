@@ -22,15 +22,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/aboutUs": [
+    "/aboutUs/[developerId]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/aboutUs.js"
-    ],
-    "/aboutUs/developer": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/aboutUs/developer.js"
+      "static/chunks/pages/aboutUs/[developerId].js"
     ]
   },
   "ampFirstPages": []
