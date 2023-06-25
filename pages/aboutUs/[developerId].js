@@ -11,6 +11,7 @@ const DeveloperDetails = () => {
   const developerId = router.query.developerId;
   //  console.log(developerId)
 
+  // The parseInt function is used to convert the developerId from a string to an integer, which is necessary because the id values in the details array are integers.
   const developer = details.find((data) => data.id === parseInt(developerId));
 
   if (!developer) {
