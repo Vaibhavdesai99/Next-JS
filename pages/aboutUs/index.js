@@ -1,7 +1,26 @@
-// our-domain.com/aboutUs
+import Link from "next/Link";
 
-function about_Us() {
-  return <h1>This is about us page</h1>;
-}
+const developers = [
+  { id: 1, name: "Yash" },
+  { id: 2, name: "Vaibhav" },
+  { id: 3, name: "Suresh" },
+];
 
-export default about_Us;
+const AboutUs = () => {
+  return (
+    <>
+      <h1>Developers Names</h1>
+      <ul>
+        {developers.map((developer) => (
+          <li key={developer.id}>
+            <Link href={`/aboutUs/${developer.id}`}>
+              <h2>{developer.name}</h2>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+};
+
+export default AboutUs;
